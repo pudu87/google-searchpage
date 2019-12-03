@@ -1,111 +1,138 @@
 body {
     display: block;
-    text-align: center;
-    padding-top: 140px;
-    color: #5F6368;
+    text-align: left;
+    color: #545454;
     font-family: arial;
     font-size: 14px;
     background-color: white;
-}
-
-#logo, #form, #buttons, #language {
-    margin: 20px;
-}
-
-#language {
-    font-size: small;
-    color: #222;
 }
 
 li {
     display: inline-block;
 }
 
+#wrapper {
+    margin-left: 150px;
+    margin-bottom: 30px;
+    max-width: 675px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+p.content em {
+    color: #70757a;
+}
+
+p#results, h1, p.website, p.content, p#related, ul#related-list{
+    margin-left: 10px;
+    max-width: 645px;
+}
+
+p#results {
+    color: #70757a;
+    padding: 10px 0px;
+}
+
+h1 {
+    padding-top: 15px;
+    font-size: 20px;
+    color: #1a0dab;
+    line-height: 1.3;
+}
+
+p.website {
+    font-size: 16px;
+    color: #006621;
+    line-height: 1.5;
+}
+
+p.content {
+    padding: 10px 0px;
+    line-height: 1.57;
+}
+
+p#related {
+    padding: 25px 0px;
+    font-size: 20px;
+    color: #222;
+}
+
+ul#related-list li{
+    width: 250px;
+    padding: 8px 50px 8px 0px;
+    color: #1a0dab;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#wrapper a:hover{
+    text-decoration: underline;
+}
+
 /*NAV*/
 
 nav {
-    position: absolute;
-    top: 5px;
-    right: 18px;
-    text-align: right;
     font-size: 13px;
-    color: rgba(0,0,0,0.87);
+    color: #5f6368;
 }
 
-nav li {
-    padding: 7px;
+nav #top {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+nav #top li {
+    margin-left: 20px;
+}
+
+nav #top .right {
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav #menu {
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+nav #menu-wrapper {
+    margin-left: 150px;
+    max-width: 675px;
+}
+
+nav #menu li {
+    padding: 10px 20px 20px 0px;
+}
+
+nav #menu #all {
+    border-bottom: 3px solid #1A73E8;
+    padding-left: 10px;
+}
+
+nav #menu .right {
+    float: right;
+    text-align: right;
+}
+
+nav #menu a:hover{
+    color: blue;
 }
 
 nav img {
     vertical-align: middle;
 }
 
-/*FOOTER*/
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    font-size: 13px;
-    color: rgba(0,0,0,.54);
-    background-color: #f2f2f2;
-}
-
-#country, #links {
-    border-top: 1px solid #e4e4e4;
-    padding: 12px 10px;
-}
-
-#country {
-    font-size: 15px;
-    padding-left: 25px;
-}
-
-#links {
-    margin-bottom: 15px;
-}
-
-#links li {
-    padding: 0 15px;
-}
-
-#about {
-    float: left;
-}
-
-#settings {
-    float: right;
-    text-align: right;
-}
-
-/*LINKS*/
-
-nav a, footer a, #language a {
-    text-decoration: none;
-}
-
-nav a:hover, footer a:hover, #language a:hover{
-    text-decoration: underline;
-}
-
-#language a {
-    color: #1a0dab;
-}
-
-nav a {
-    color: rgba(0,0,0,.87);
-}
-
-footer a {
-    color: rgba(0,0,0,.54);
-}
-
-/*SEARCH-AREA & BUTTONS*/
-
 #search {
-    width: 500px;
-    padding: 0 50px;
+    width: 575px;
+    padding: 0px 50px;
     height: 44px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
@@ -113,15 +140,61 @@ footer a {
     background-image: url('../images/search-icon.png');
     background-size: 15px;
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 640px center;
 }
 
-.buttons {
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    padding: 10px 20px;
-    margin: 30px 0px 8px 8px;
-    border: none;
+#search::placeholder{
+    color: black;
+    font-size: 16px;
+    opacity: 1;
+}
+
+nav #menu #tools a:hover{
+    padding: 4px 11px;
+    border: 1px solid #c6c6c6;;
+    margin-right: -12px;
+    margin-left: -12px;
+    color: #5f6368;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    text-align: left;
     font-size: 14px;
-    color: #5F6368;        
+    color: rgba(0,0,0,.54);
+    background-color: #f2f2f2;
+}
+
+footer a:hover{
+    color: black;
+}
+
+#location, #links {
+    border-top: 1px solid #e4e4e4;
+    padding: 13px 160px;
+}
+
+#location {
+    padding: 10px 160px;
+}
+
+#location li {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+#location li:first-child {
+    padding: 3px 0px;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #e4e4e4;
+}
+
+#links li {
+    padding-right: 25px;
 }

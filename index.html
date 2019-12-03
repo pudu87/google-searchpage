@@ -2,52 +2,138 @@
 
 <html>
     <head>
-        <title>Google</title>
+        <title>build this webpage - Google Search</title>
+        <link rel="icon" type ="png" href ="images/favicon.png">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">  
     </head>
 
     <body>
-
-        <p id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                          alt="logo"></p>
-        
-        <form id="form" action="script.php" method="get">
-            <p><input id="search"></p>
-            <p><ul>
-                <li><input class="buttons" type="submit" value="Google Search"></input></li>
-                <li><input class="buttons" type="button" value="I'm Feeling Lucky"></input></li>
-            </ul></p></div>
-        </form>
-
-        <p id="language">Google offered in: <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Español (Latinoamérica)</a></p>    
-                
+    
         <nav>
-            <p><ul>
-                <li><a href="https://en.wikipedia.org/wiki/Gmail">Gmail</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Images_(ballet)">Images</a></li>
+            <div id="top">
+            <ul>
+                <li><a href="https://www.google.com/">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+                         height="35" width="100"alt="logo"></a></li>
+                <li><input id="search" placeholder="build this webpage"></li>
+                <div class="right">
                 <li><a href="https://en.wikipedia.org/wiki/Geoff_Apps">
                     <img src="images/apps-icon.png"
                          height="20" width="20" alt="apps"></a></li>
                 <li><a href="https://en.wikipedia.org/wiki/User_(ancient_Egyptian_official)">
                     <img src="images/user-icon.png"
-                         height="35" width="35" alt="apps"></a></li>
-            </ul></p>
-        </nav>
+                         height="35" width="35" alt="user"></a></li></div>
+            </ul></div>
+        
+            <div id="menu">
+            <div id="menu-wrapper"><ul>
+                <li id="all"><a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xMCAydjJhNiA2IDAgMCAxIDYgNmgyYTggOCAwIDAgMC04LTh6Ii8+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEwIDRWMmE4IDggMCAwIDAtOCA4aDJjMC0zLjMgMi43LTYgNi02eiIvPjxwYXRoIGZpbGw9IiNGQkJDMDQiIGQ9Ik00IDEwSDJhOCA4IDAgMCAwIDggOHYtMmMtMy4zIDAtNi0yLjY5LTYtNnoiLz48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIgMjAuNTlsLTUuNjktNS42OUE3Ljk2IDcuOTYgMCAwIDAgMTggMTBoLTJhNiA2IDAgMCAxLTYgNnYyYzEuODUgMCAzLjUyLS42NCA0Ljg4LTEuNjhsNS42OSA1LjY5TDIyIDIwLjU5eiIvPjwvc3ZnPgo="
+                        height="16" width="16" alt= "all"> All</a></li>
+                <li><a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiM0Mjg1RjQiIGQ9Ik0xOSAyMmgtN3YtMmg3Yy41NSAwIDEtLjQ2IDEtMVY1YTEgMSAwIDAgMC0xLS45OUwxMiA0VjJoN2MxLjY2IDAgMyAxLjM2IDMgM3YxNGMwIDEuNjUtMS4zNSAzLTMgMyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgMjJINWMtMS42NCAwLTMtMS4zNi0zLTNWNWMwLTEuNjQgMS4zNi0zIDMtM2g3djJINWMtLjU1IDAtLjk5LjQ1LS45OSAxTDQgMTljMCAuNTUuNDUgMSAxIDFoN3YyeiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjMzRBODUzIiBkPSJNMTQgMTNsLTIuMjUgMi43NUwxMCAxNGwtNCA0aDEyeiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkJCQzA0IiBkPSJNMTAgOGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTJjMC0xLjA5LjktMiAyLTJzMiAuOSAyIDIiLz48L3N2Zz4K"
+                        height="16" width="16" alt= "maps"> Maps</a></li>
+                <li><a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgwVjB6Ii8+PHBhdGggZmlsbD0iIzM0QTg1MyIgZD0iTTIyIDEyaC0ydjYuMjJjLS4wNy40OC0uNTEuODItMSAuNzhoLTd2Mmg3YzEuNTkuMDUgMi45Mi0xLjE3IDMtMi43NlYxMiIvPjxwYXRoIGZpbGw9IiM0Mjg1RjQiIGQ9Ik0xOSAzaC03djJoN2MuNDktLjA0LjkyLjMgMSAuNzhWMTJoMlY1Ljc2QTIuOTMgMi45MyAwIDAgMCAxOSAzIi8+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEyIDNINWEyLjkzIDIuOTMgMCAwIDAtMyAyLjc2VjEyaDJWNS43OEEuOTQuOTQgMCAwIDEgNSA1aDdWMyIvPjxwYXRoIGZpbGw9IiNGQkJDMDQiIGQ9Ik00IDEySDJ2Ni4yNEEyLjkxNiAyLjkxNiAwIDAgMCA1IDIxaDd2LTJINWMtLjQ5LjA0LS45Mi0uMy0xLS43OEw0LjAxIDEyIi8+PHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTEwIDdINnY2aDRWN204IDRoLTZ2Mmg2di0ybTAgNEg2djJoMTJ2LTJtMC04aC02djJoNlY3Ii8+PC9zdmc+Cg=="
+                        height="16" width="16" alt= "news"> News</a></li>
+                <li><a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNDI4NUY0IiBkPSJNMTAgMTYuNWw2LTQuNS02LTQuNXoiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0VBNDMzNSIgZD0iTTIwIDEyaDJ2Ny41YTIuNSAyLjUgMCAwIDEtMi41IDIuNUgxMnYtMmg3YTEgMSAwIDAgMCAxLTF2LTd6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGQkJDMDQiIGQ9Ik0yMCAxMlY1YTEgMSAwIDAgMC0xLTFoLTdWMmg3LjZBMi40IDIuNCAwIDAgMSAyMiA0LjRWMTJoLTJ6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xMiAyMHYySDVhMyAzIDAgMCAxLTMtM1Y0LjRBMi40IDIuNCAwIDAgMSA0LjQgMkgxMnYySDVhMSAxIDAgMCAwLTEgMXYxNGExIDEgMCAwIDAgMSAxaDd6Ii8+PC9zdmc+Cg=="
+                        height="16" width="16" alt= "videos"> Videos</a></li>
+                <li><a href=""><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiM0Mjg1RjQiIGQ9Ik0xOSAyMmgtN3YtMmg3Yy41NSAwIDEtLjQ2IDEtMVY1YTEgMSAwIDAgMC0xLS45OUwxMiA0VjJoN2MxLjY2IDAgMyAxLjM2IDMgM3YxNGMwIDEuNjUtMS4zNSAzLTMgMyIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgMjJINWMtMS42NCAwLTMtMS4zNi0zLTNWNWMwLTEuNjQgMS4zNi0zIDMtM2g3djJINWMtLjU1IDAtLjk5LjQ1LS45OSAxTDQgMTljMCAuNTUuNDUgMSAxIDFoN3YyeiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjMzRBODUzIiBkPSJNMTQgMTNsLTIuMjUgMi43NUwxMCAxNGwtNCA0aDEyeiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkJCQzA0IiBkPSJNMTAgOGMwIDEuMS0uOSAyLTIgMnMtMi0uOS0yLTJjMC0xLjA5LjktMiAyLTJzMiAuOSAyIDIiLz48L3N2Zz4K"
+                        height="16" width="16" alt= "images"> Images</a></li>
+                <li><a href=""><img src="https://image.flaticon.com/icons/png/128/61/61140.png"
+                        height="16" width="16" alt= "more"> More</a></li>
+                <div class="right">
+                <li><a href="">Settings</a></li>
+                <li><div id="tools"><a href="">Tools</a></div></li></div>
+            </ul></div></div></nav>
+
+        <div id="wrapper">
+            
+        <p id="results">About 144,000,000 results (0.62 seconds)</p>
+
+        <h1><a href="www.google.com">build this webpage - GitHub Pages</a></h1>
+        <p class="website">https://christine-27.github.io › google-homepage &#9662</p>
+        <p class="content">TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK 
+        INSTALLATION: Log in to your hosting account. Go to your control panel. Look for the 
+        “WordPress” or “<strong>Website</strong>” icon. Choose the domain where you want to install your <strong>website</strong>.</p>
+        
+        <h1><a href="www.google.com">build this webpage - GitHub Pages</a></h1>
+        <p class="website">https://victor-lf.github.io › google-search-results &#9662</p>
+        <p class="content">TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK 
+        INSTALLATION: Log in to your hosting account. Go to your control panel. Look for the 
+        “WordPress” or “<strong>Website</strong>” icon. Choose the domain where you want to install your <strong>website</strong>.</p>
+        
+        <h1><a href="www.google.com">With zero coding experience, artist building 180 webpages in ...</a></h1>
+        <p class="website">https://arstechnica.com › information-technology › 2013/07 › with-zero-c... &#9662</p>
+        <p class="content"><em>Jul 26, 2013 -</em> 117 days ago, having never done any programming in her life, Jennifer Dewalt 
+        built her first <strong>webpage</strong>. The next day, she built another, and she ...</p>
+        
+        <h1><a href="www.google.com">How to Build a Website: the Step-by-Step Guide to Easy Setup ...</a></h1>
+        <p class="website">https://www.websitebuilderexpert.com › building-websites &#9662</p>
+        <p class="content"><em>2 days ago -</em> We'll be going through the <strong>website</strong> building process for both approaches here. 
+        You'll be surprised by how simple it can be, especially when ...</p>
+        
+        <h1><a href="www.google.com">Jennifer Dewalt — I'm learning to code by building 180 ...</a></h1>
+        <p class="website">https://blog.jenniferdewalt.com › post › im-learning-to-code-by-building-1... &#9662</p>
+        <p class="content"><em>Jul 24, 2013 -</em> Build a different <strong>website</strong> every day for 180 consecutive days. Every <strong>website</strong> 
+        must be accompanied by a blog post. Any code I write must be ...</p>
+        
+        <h1><a href="www.google.com">How to Create a Website: Step-by-Step Guide for Beginners ...</a></h1>
+        <p class="website">https://websitesetup.org &#9662</p>
+        <p class="content"><em>Apr 25, 2019 -</em> Learn how to make a <strong>website</strong> and set it up. This site contains different tutorials 
+        on how to <strong>build</strong> a <strong>website</strong> using WordPress, Joomla, Drupal ...</p>
+        
+        <h1><a href="www.google.com">How to Build A Website: A-to-Z Beginner Guide | BuildThis</a></h1>
+        <p class="website">https://www.buildthis.io › make-a-website &#9662</p>
+        <p class="content"><em>Aug 19, 2019 -</em> It's easy to create a <strong>website</strong> today even if you aren't a tech-novice. Here are 
+        the 5 essential steps to follow if you wish to <strong>build</strong> a <strong>website</strong> by ...</p>
+        
+        <h1><a href="www.google.com">Squarespace: Build a Website – Website Builder</a></h1>
+        <p class="website">https://www.squarespace.com &#9662</p>
+        <p class="content">Squarespace is the all-in-one solution for anyone looking to create a beautiful <strong>website</strong>. 
+        Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...</p>
+        
+        <h1><a href="www.google.com">Free Website Builder: Build a Free Website or Online Store ...</a></h1>
+        <p class="website">https://www.weebly.com › ... &#9662</p>
+        <p class="content">Weebly's free <strong>website</strong> builder makes it easy to create a <strong>website</strong>, blog, or online store. Find 
+        customizable templates, domains, and easy-to-use tools for any type ...</p>
+        
+        <h1><a href="www.google.com">Free Website Builder 100% Off | Create a Free Website ...</a></h1>
+        <p class="website">https://www.site123.com &#9662</p>
+        <p class="content">SITE123 is by far the easiest free <strong>website</strong> builder. Create your <strong>website</strong> now! ... Share your 
+        <strong>website</strong> on social media and <strong>build</strong> a <strong>website</strong> today! Image ...</p>
+
+        <p id="related">Searches related to build this webpage</p>
+        
+        <ul id="related-list">
+            <li><a href="www.google.com">
+                creating a website for your business</a></li>
+            <li><a href="www.google.com">
+                the odin project</a></li>
+            <li><a href="www.google.com">
+                how to create a website pdf</a></li>
+            <li><a href="www.google.com">
+                creating a website 101</a></li>
+            <li><a href="www.google.com">
+                github</a></li>
+        </ul>
+
+        </div>
 
         <footer>
-            <p id="country">Chile</p>
-            <div id="links"><p><div id="about"><ul>
-                <li><a href="https://en.wikipedia.org/wiki/Advertising">Advertising</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Business">Business</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Edmond_Fran%C3%A7ois_Valentin_About">About</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Search_(band)">How Search works</a></li>
+            <div id="location"><ul>
+                <li id="country">Chile</li>
+                <li><strong>&#9679 Ñuñoa</strong> - From your internet address
+                 - <a href="https://en.wikipedia.org/wiki/Location">Use precise location</a>
+                 - <a href="https://support.google.com/websearch/answer/179386?p=ws_settings_location&hl=en-CL&visit_id=637105591572766749-1856353774&rd=1">Learn more</a>
+                </li>
             </ul></div>
-            <div id="settings"><ul>
+            
+            <div id="links"><ul>
+                <li><a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE">Help</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Feedback">Send feedback</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Privacy">Privacy</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Term,_Iran">Terms</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/List_of_knot_terminology#Setting">Settings</a></li>
-            </ul></div></p></div>
+            </ul></div>
         </footer>
+        
     </body>
 </html>
