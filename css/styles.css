@@ -66,6 +66,10 @@ ul#related-list li{
     font-weight: bold;
 }
 
+ul#related-list{
+    margin-bottom: 30px;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -73,6 +77,68 @@ a{
 
 #wrapper a:hover{
     text-decoration: underline;
+}
+
+/*PAGES*/
+
+#pages{
+    text-align: center;
+    font-size: 0px;
+}
+
+#pages #google-G{
+    vertical-align: top;
+    max-width: 31px;
+}
+
+#pages #google-o-red, #pages .google-o{
+    max-width: 21.5px;
+    font-size: 14px;
+}
+
+#pages .google-o{
+    color: #4285f4;
+}
+
+#pages a:hover, #pages #next:hover{
+    text-decoration: underline;
+}
+
+#pages #next-page{
+    display: inline-block;
+    max-width: 87px;
+    text-align: right;
+    font-size: 0px;
+    vertical-align: top;
+}
+
+#pages #google-g{
+    max-width: 21px;
+}
+
+#pages #google-l{
+    max-width: 7px;
+}
+
+#pages #google-e{
+    max-width: 20px;
+}
+
+#pages #chevron{
+    padding-left: 30px;
+    height: 40px;
+    color: #4c8bf5;
+    font-size: 30px;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#pages #next{
+    text-align: right;
+    font-size: 14px;
+    margin-top: 2px;
+    color: #4285f4;
 }
 
 /*NAV*/
@@ -115,6 +181,7 @@ nav #menu li {
 nav #menu #all {
     border-bottom: 3px solid #1A73E8;
     padding-left: 10px;
+    color: #1A73E8;
 }
 
 nav #menu .right {
