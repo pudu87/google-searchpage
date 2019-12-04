@@ -49,7 +49,7 @@ p.website {
 }
 
 p.content {
-    padding: 10px 0px;
+    padding-bottom: 10px;
     line-height: 1.57;
 }
 
@@ -264,4 +264,39 @@ footer a:hover{
 
 #links li {
     padding-right: 25px;
+}
+
+/*PEOPLE ALSO ASK*/
+
+#ask{
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    width: 100%;
+    color: #222;
+    margin: 20px -5px 0px -5px;
+}
+
+#ask #people{
+    font-size: 20px;
+    padding: 15px;
+}
+
+#ask .question{
+    font-size: 16px;
+    padding: 12px 15px ;
+    border-top: 1px solid #dfe1e5;
+    vertical-align: top;
+}
+
+#ask .question img{
+    float: right;
+    color: #70757a;
+}
+
+#feedback{
+    text-align: right;
+    color: #70757a;
+    font-size: 12px;
+    font-style: italic;
+    margin: 5px 15px 15px 0px;
 }
