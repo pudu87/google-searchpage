@@ -1,9 +1,6 @@
-From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
+## Google Searchpage
 
-Deconstruction of an existing web-page and rebuilding it, Part 2.
+_A reconstruction of the results of a Google search to practice basic HTML and CSS skills._
 
-Things i learned:
-- Be creative with boxes.
-- Use a wrapper.
-- Create an elaborate navigation bar.
-- Use a placeholder.
+* Check it out [here](https://pudu87.github.io/google-searchpage)
+* From The Odin Project's [curriculum](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/html-css)
